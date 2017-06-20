@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Domine');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 20px;
+	font-family: Domine, Georgia, serif;
+	margin: auto;
+}
+
+p {
+	width: 30em;
+	line-height: 145%;
+	padding-bottom: 1em;
+	margin: auto;
+}
+
+h1, h2, h3 {
+	font-family: Monserrat, Arial, sans-serif;
+	padding: 20px;
+	margin: auto;
+	text-align: center;
+}
+
+header {
+	background-color: #FFE081;
+}
+
+nav {
+	text-align: center;
+	padding: 15px 20px;
+	margin: 0px 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	padding: 15px 20px;
+	margin: 0px 20px
+}
+
+
+section#heading {
+	background-color: #FFC581;
+}
+
+section#the_game {
+	background-color: #E86B88;
+}
+
+section#how_play {
+	background-color: #A682FF;
+}
+
+section#partners_players {
+	background-color: #6BD1E8;
+}
+
+section#download {
+	background-color: #83FF86;
+}
+
+footer {
+	background-color: #FFE081;
+}
+
+
+
+
+
