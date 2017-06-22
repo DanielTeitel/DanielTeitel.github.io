@@ -4,16 +4,20 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
-
+body {
+	font-size: 20px;
+	font-family: Domine, Georgia, serif;
+}
 #wrapper {
-	width: 64em;
+	/* width: 60em; */
+	margin: auto;
 }
 
 
 h1, h2, h3 {
 	font-family: Monserrat, Arial, sans-serif;
-	margin: auto;
 	text-align: center;
 }
 
@@ -28,21 +32,12 @@ h2 {
 }
 
 h3 {
-	padding: 40px 0;}
-
-
-body {
-	font-size: 20px;
-	font-family: Domine, Georgia, serif;
-	margin: auto;
+	padding: 0 0 40px;
 }
-
 p {
 	width: 30em;
 	line-height: 145%;
-	padding-bottom: 1em;
-	margin: auto;
-	box-sizing: border-box;
+	margin: 0 auto 5em;
 }
 
 header {
@@ -55,59 +50,48 @@ nav {
 	margin: 0px 20px;
 }
 
-a {
+nav a {
 	text-decoration: none;
 	color: #000;
-	display: block;
-	float: left;
+	display: inline-block;
 	padding: 20px;
 }
 
-a:hover {
+nav a:hover {
 	background-color: #aaaaaa;
 }
 
-section#heading {
+#heading {
 	background-color: #FFC581;
 }
 
 article	{
 	float: left;
 	background-color: inherit;
-	display: inline-block;
 	width: 25%;
-	height: 15em;
-	box-sizing: border-box;
-	border: 5px solid black;
+	/* min-height: 18em; */
+	/* border: 5px solid black; */
+	padding: 2em 2em;
 }
-
-
 article p {
-	width: 12em;
-	padding: 0 1em;
-	/*box-sizing: border-box;*/
+	width: 100%;
 }
-
-
-
 #the_game {
 	background-color: #E86B88;
-	clear: both;
 }
-
+#the_game article {
+	width:33.33%;
+}
 #how_play {
 	background-color: #A682FF;
-	clear: both;
 }
 
 #partners_players {
 	background-color: #6BD1E8;
-	clear: both;
 }
 
 #download {
 	background-color: #83FF86;
-	clear: both;
 }
 
 footer {
@@ -116,7 +100,7 @@ footer {
 	padding: 20px;
 }
 
-.clearfix:after {
+.clearfix:after, #wrapper>section:after {
 	visibility: hidden;
 	display: block;
 	content: " ";
