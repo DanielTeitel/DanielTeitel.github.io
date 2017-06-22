@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Domine');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper {
+	width: 64em;
+}
+
+
+h1, h2, h3 {
+	font-family: Monserrat, Arial, sans-serif;
+	margin: auto;
+	text-align: center;
+}
+
+h1 {
+	font-size: 120px;
+	padding: 300px 0;
+}
+
+h2 {
+	font-size: 80px;
+	padding: 80px 0;
+}
+
+h3 {
+	padding: 40px 0;}
+
+
+body {
+	font-size: 20px;
+	font-family: Domine, Georgia, serif;
+	margin: auto;
+}
+
+p {
+	width: 30em;
+	line-height: 145%;
+	padding-bottom: 1em;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #FFE081;
+}
+
+nav {
+	text-align: center;
+	padding: 15px 20px;
+	margin: 0px 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	float: left;
+	padding: 20px;
+}
+
+a:hover {
+	background-color: #aaaaaa;
+}
+
+section#heading {
+	background-color: #FFC581;
+}
+
+article	{
+	float: left;
+	background-color: inherit;
+	display: inline-block;
+	width: 25%;
+	height: 15em;
+	box-sizing: border-box;
+	border: 5px solid black;
+}
+
+
+article p {
+	width: 12em;
+	padding: 0 1em;
+	/*box-sizing: border-box;*/
+}
+
+
+
+#the_game {
+	background-color: #E86B88;
+	clear: both;
+}
+
+#how_play {
+	background-color: #A682FF;
+	clear: both;
+}
+
+#partners_players {
+	background-color: #6BD1E8;
+	clear: both;
+}
+
+#download {
+	background-color: #83FF86;
+	clear: both;
+}
+
+footer {
+	background-color: #FFE081;
+	text-align: center;
+	padding: 20px;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+/*#apple_logo {
+	padding: 20px;
+	margin: 40px;
+	float: left;
+}
+
+#android_logo {
+	padding: 20px;
+	margin: 40px;
+	float: left;
+}*/
+
+
