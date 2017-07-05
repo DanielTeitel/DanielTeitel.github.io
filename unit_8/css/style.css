@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Domine');
 
 * {
@@ -20,15 +20,15 @@ h1, h2, h3 {
 	text-align: center;
 }
 h1 {
-	font-size: 120px;
-	padding: 300px 0;
+	font-size: 6em;
+	padding: 2em 0;
 }
 h2 {
-	font-size: 80px;
-	padding: 80px 0;
+	font-size: 4em;
+	padding: 1em 0;
 }
 h3 {
-	padding: 0 0 40px;
+	padding: 0 0 2em;
 }
 p {
 	width: 50%;
@@ -41,14 +41,14 @@ header {
 }
 nav {
 	text-align: center;
-	padding: 15px 20px;
-	margin: 0px 20px;
+	padding: .8em 1em;
+	margin: 0 1em;
 }
 nav a {
 	text-decoration: none;
 	color: #000;
 	display: inline-block;
-	padding: 20px;
+	padding: 1em;
 }
 nav a:hover {
 	background-color: #cccccc;
@@ -61,7 +61,6 @@ div {
 	float: left;
 	background-color: inherit;
 	padding: 2em 2em;
-	min-height: 16em;
 }
 div:hover {
 	background-color: #cccccc;
@@ -79,7 +78,7 @@ div:hover {
 	background-color: #E86B88;
 }
 #the_game div {
-	width:33.33%;
+	width:33.3333%;
 }
 #how_play {
 	background-color: #A682FF;
@@ -96,21 +95,19 @@ div:hover {
 
 #download {
 	background-color: #83FF86;
-	wi
 	margin: auto;
 }
 #download div {
 	width: 25%;
 }
 #download img {
-	display:block;
-	margin: auto;
+	display: block;	
 }
 
 footer {
 	background-color: #FFE081;
 	text-align: center;
-	padding: 20px;
+	padding: 1em;
 }
 
 
@@ -123,4 +120,40 @@ footer {
 	font-size: 0;
 }
 
+@media only screen and (max-width: 1000px) {
+	.four_button p {
+		display: none;
+	}
+	.three_button p {
+		display: none;
+	}
+}
 
+@media only screen and (max-width: 925px) {
+	.four_button p {
+		display: none;
+	}
+	.three_button p {
+		display: none;
+	}
+	nav a {
+		float: none;
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 880px) {
+	.four_button {
+		display: none;
+	}
+	.three_button {
+		display: none;
+	}
+	nav a {
+		float: none;
+		display: block;
+	}
+	body {
+		font-size: 16px;
+	}
+}
