@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+ @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Domine');
 
 * {
@@ -93,13 +93,18 @@ div:hover {
 #partners_players div {
 	width: 25%;
 }
+
 #download {
 	background-color: #83FF86;
+	margin: auto;
 }
 #download div {
-	width: 50%;
+	width: 25%;
 }
-
+#download img {
+	display:block;
+	margin: auto;
+}
 
 footer {
 	background-color: #FFE081;
