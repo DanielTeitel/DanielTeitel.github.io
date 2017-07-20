@@ -12,7 +12,6 @@ body {
 }
 #wrapper {
 	margin: auto;
-	background-color: white;
 }
 
 h1, h2, h3 {
@@ -28,13 +27,13 @@ h2 {
 	padding: 1em 0;
 }
 h3 {
-	padding: 0 0 2em;
+	padding: 0 0 1em;
 }
 p {
-	width: 50%;
-	line-height: 145%;
-	margin: 0 auto 3em;
-	text-align: center;
+	width: 75%;
+	line-height: 135%;
+	margin: 0 auto 1em;
+	text-align: justify;
 }
 header {
 	background-color: #FFE081;
@@ -58,50 +57,52 @@ nav a:hover {
 	background-color: #FFC581;
 }
 div {
-	float: left;
 	background-color: inherit;
-	padding: 2em 2em;
+	padding: 1em;
+	margin: auto;
 }
-div:hover {
-	background-color: #cccccc;
-}
-
-
 
 .four_button p {
 	width: 100%;
+	font-size: 0.75em
 }
-.three_button p {
+.two_button p {
 	width: 100%;
+	font-size: 0.75em
+}
+.center {
+	text-align: center;
+	padding-bottom: 3em;
 }
 #the_game {
 	background-color: #E86B88;
 }
 #the_game div {
-	width:33.3333%;
+	width: 50%;
 }
 #how_play {
 	background-color: #A682FF;
 }
 #how_play div {
-	width: 25%;
+	width: 50%;
 }
 #partners_players {
 	background-color: #6BD1E8;
 }
 #partners_players div {
-	width: 25%;
+	width: 50%;
 }
-
 #download {
 	background-color: #83FF86;
 	margin: auto;
 }
 #download div {
-	width: 25%;
+	width: 70%;
+	margin: auto;
 }
 #download img {
 	display: block;	
+	float: left;
 }
 
 footer {
@@ -120,22 +121,8 @@ footer {
 	font-size: 0;
 }
 
-@media only screen and (max-width: 1000px) {
-	.four_button p {
-		display: none;
-	}
-	.three_button p {
-		display: none;
-	}
-}
 
 @media only screen and (max-width: 925px) {
-	.four_button p {
-		display: none;
-	}
-	.three_button p {
-		display: none;
-	}
 	nav a {
 		float: none;
 		display: block;
@@ -143,16 +130,6 @@ footer {
 }
 
 @media only screen and (max-width: 880px) {
-	.four_button {
-		display: none;
-	}
-	.three_button {
-		display: none;
-	}
-	nav a {
-		float: none;
-		display: block;
-	}
 	body {
 		font-size: 16px;
 	}
