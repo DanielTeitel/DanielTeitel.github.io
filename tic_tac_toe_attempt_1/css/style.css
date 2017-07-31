@@ -1,0 +1,39 @@
+
+body {
+	font-size: 16px
+}
+
+.square {
+    width: 4em solid black;
+    height: 4em solid black;
+    border: 4em solid black;
+    padding: 4em solid black;
+    margin: 1em;
+    display: inline-block;
+}
+
+.ex {
+    width: 4em solid blue;
+    height: 4em solid blue;
+    border: 4em solid blue;
+    padding: 4em solid blue;    
+    margin: 1em;
+    display: inline-block;
+}
+
+.oh {
+    width: 4em solid green;
+    height: 4em solid green;
+    border: 4em solid green;
+    padding: 4em solid green;
+    margin: 1em;
+    display: inline-block;
+}
+
+/*.clearfix:after { 
+   content: ""; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}*/
