@@ -15,90 +15,10 @@ var pos9 = undefined;
 var pos10 = undefined;
 
 
-
 $(function() {
-	$('.square').on('click', function() {
+	$('#checkWinner').on('click', function() {
 
-		if (numberOfX === numberOfO) {
-			
-			numberOfX += 1;
-			$(this).addClass('ex');
-			
-			var pos = eval($(this).attr('id'));
-			
-			switch (pos) {
-				case 1:
-				pos1 = 1;
-				break;
-				case 2:
-				pos2 = 1;
-				break;
-				case 3:
-				pos3 = 1;
-				break;
-				case 4:
-				pos4 = 1;
-				break;
-				case 5:
-				pos5 = 1;
-				break;
-				case 6:
-				pos6 = 1;
-				break;
-				case 7:
-				pos7 = 1;
-				break;
-				case 8:
-				pos8 = 1;
-				break;
-				case 9:
-				pos9 = 1;
-				break;
-				default:
-				pos10 = 1;
-			}
-
-		} else {
-			
-			numberOfO += 1;
-			$(this).addClass('oh');
-
-			var pos = eval($(this).attr('id'));
-			
-			switch (pos) {
-				case 1:
-				pos1 = 0;
-				break;
-				case 2:
-				pos2 = 0;
-				break;
-				case 3:
-				pos3 = 0;
-				break;
-				case 4:
-				pos4 = 0;
-				break;
-				case 5:
-				pos5 = 0;
-				break;
-				case 6:
-				pos6 = 0;
-				break;
-				case 7:
-				pos7 = 0;
-				break;
-				case 8:
-				pos8 = 0;
-				break;
-				case 9:
-				pos9 = 0;
-				break;
-				default:
-				pos10 = 0;
-			}
-		};
-		var checkWinner = function() {
-			if (pos1 === 1 && pos2 === 1 && pos3 === 1 ||
+		if (pos1 === 1 && pos2 === 1 && pos3 === 1 ||
 				pos1 === 1 && pos4 === 1 && pos7 === 1 ||
 				pos1 === 1 && pos5 === 1 && pos9 === 1 || 
 				pos2 === 1 && pos5 === 1 && pos8 === 1 || 
@@ -120,13 +40,36 @@ $(function() {
 				
 				$('h2').html('GREEN WINS').css('font-size', '5em');
 				
-			}
+			};
+		};
+	});
+
+$(function() {
+
+	for (var i = 1; i <= 3; i++) {
+       
+        for (var j = 1; j <= 3; j++) {
+            $('.wrapper').append('<div class="square" id="' + i + j + '" onClick="setSquare(' + i + ',' + j + ')">');
+        }
+        
+        $('.wrapper').append('<br>');
+    };
+
+	$('.square').on('click', function() {
+
+		if (numberOfX === numberOfO) {
 			
-		}
-	checkWinner();
+			numberOfX += 1;
+			$(this).addClass('ex');
+
+		} else {	
+			numberOfO += 1;
+			$(this).addClass('oh');
+
+		};
 	
 	});
-});
+};
 
 $(function() {
 	$('#reset').on('click', function() {

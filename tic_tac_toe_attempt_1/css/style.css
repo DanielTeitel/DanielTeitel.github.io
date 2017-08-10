@@ -30,6 +30,18 @@ body {
     display: inline-block;
 }
 
+@media only screen and (max-width: 1000px) {
+
+.square {
+    width: 2em solid black;
+    height: 2em solid black;
+    border: 2em solid black;
+    padding: 2em solid black;
+    margin: 1em;
+    display: inline-block;
+  }
+}
+
 /*.clearfix:after { 
    content: ""; 
    visibility: hidden; 
