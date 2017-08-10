@@ -1,7 +1,7 @@
 $('h1').html('Find the Temperature');
 
 var APPID = "&appid=a67bbf228eedfb5462eaaa1efe3012e4";
-var URL = "http://api.openweathermap.org/data/2.5/weather?q="
+var URL = "https://api.openweathermap.org/data/2.5/weather?q="
 
 $('form').on('submit', function(e) {  // When the user submits the form
    e.preventDefault();   // Stop the page from reloading
